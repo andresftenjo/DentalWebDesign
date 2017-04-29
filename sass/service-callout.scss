@@ -1,0 +1,79 @@
+.service-container{
+    .service-column{
+        background-image:url('../img/boca2.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    .jumbotron{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: none;
+        width: 60%;
+        h3{
+            color:$infoColor;
+            font-weight: 600;
+        }
+        p{
+            color:$brandColor;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .service-container{
+        .jumbotron{
+            padding-top: 1px;   
+            padding-bottom: 65px;
+
+            h3{ margin-top: 60px; }
+        }
+    }
+}
+
+@media screen and (max-width:568px){
+    .service-container{
+        .jumbotron{
+            margin: 0;
+
+            h3{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:432px){
+    .service-container{
+        .service-column{
+            background-position: initial;
+        }
+
+        .jumbotron{
+            h3{
+                margin-top: 20px;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:356px){
+    .service-container{
+        .service-column{
+            .jumbotron{
+                padding-bottom: 45px;
+                h3{font-size: 12px;}
+                a {font-size: 9px;}
+            }
+        }
+    }
+}
+
+
+
